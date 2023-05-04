@@ -13,8 +13,7 @@ import { set } from "mongoose";
 
 function App() {
   const [toDo, setToDo] = useState([
-    { id: 1, title: "Task 1", status: false },
-    { id: 2, title: "Task 2", status: false },
+  
   ]);
 
   const [newTask, setNewTask] = useState("");
@@ -93,6 +92,7 @@ function App() {
         <div className="row">
           <div className="col">
             <input
+            placeholder="Tell me about your plans"
               value={newTask}
               onChange={(e) => setNewTask(e.target.value)}
               className="form-control form-control-lg"
